@@ -28,19 +28,14 @@
       font-family: 'Lato', sans-serif;
     }
 
-    .custom-bg {
-      background-image: url('images/banner1.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+    
   </style>
 </head>
 
 <body class="font-lato">
   <header class="md:container md:mx-auto">
     <nav>
-      <div class="navbar bg-[#F85559] rounded-full mt-2.5  ">
+      <div class="navbar lg:bg-[#F85559] rounded-full mt-2.5  ">
         <div class="navbar-start">
           <div class="navbar-center hidden  lg:flex">
             <ul class="menu text-[#FFF] text-lg font-normal menu-horizontal p-5">
@@ -53,9 +48,9 @@
         </div>
         <div class="navbar-center">
           <img src="images/logo.png" alt="">
-          <a class="btn btn-ghost normal-case font-bold text-4xl text-[#FFF]">Fruit Burst</a>
+          <a class="btn btn-ghost normal-case font-bold text-4xl lg:text-[#FFF]">Fruit Burst</a>
         </div>
-        <div class="navbar-end">
+        <div class="navbar-end hidden md:flex">
           <div class="form-control py-5 pr-10  ">
             <input type="text" placeholder="Search" class="input input-bordered rounded-full w-20 md:w-[400px] h-14" />
             <button class="btn btn-ghost btn-circle absolute right-7 top-11  w-28">
@@ -72,7 +67,7 @@
     <section class="relative">
 
       <!--slider-->
-    <div class="carousel w-full my-14">
+    <div class="carousel sm:w-40 lg:w-full my-14">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="images/banner1.png" alt="" class="w-full">
         <div class="absolute inset-0 flex flex-col justify-center items-center">
@@ -124,7 +119,7 @@
     </div>
 
       <!--extra bonus-->
-      <div class="flex justify-center items-center text-center absolute bottom-1 bg-white gap-24 p-12 -mb-10 ml-52 shadow-lg rounded-lg">
+      <div class="hidden  md:flex justify-center items-center text-center absolute bottom-1 bg-white gap-24 p-12 -mb-10 ml-52 shadow-lg rounded-lg">
         <div>
           <img src="images/fruit1.png" alt="">
           <p>Grapes</p>
@@ -150,9 +145,9 @@
     </section>
 
   </header>
-  <main class="md:container md:mx-auto">
+  <main class="md:container  md:mx-auto">
     <section>
-      <div class="flex justify-between mt-40">
+      <div class="lg:flex justify-between  lg:mt-40">
         <!--first div-->
         <div>
           <h2 class="text-4xl  font-black  mb-6">Deal of the day</h2>
@@ -413,7 +408,7 @@
 
     <!--team section-->
     <section class=" mt-24">
-      <div class="custom-bg">
+      <div class="bg-[url('images/banner1.png')]">
         <div class="bg-black bg-opacity-60">
           <h2 class="text-5xl text-center pt-40 font-bold text-white mb-6">Meet the team section</h2>
           <p class="pb-10 text-[#FFF] text-xl text-center font-normal">Contrary to popular belief, is not simply random
@@ -694,14 +689,14 @@
 
     <!--why choose us-->
     <section class="my-20">
-      <div class="flex flex-col gap-5 justify-center text-center ">
+      <div class="flex flex-col gap-5 justify-around text-center ">
         <h2 class="text-5xl font-black">Why Choose Us</h2>
         <p class="text-base font-normal">Contrary to popular belief, is not simply random text. It has roots in a piece
           of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
 
       <!--3 div together-->
-      <div class="flex flex-row justify-center items-center pt-12">
+      <div class="flex flex-row justify-around items-center pt-12">
         <!--together no.1-->
         <div class="pr-14">
           <div class="flex items-center pr-10 ">
@@ -740,7 +735,7 @@
 
         <!--together img no.2-->
         <div>
-          <img class="w-96 h-96" src="images/whychoose1.png" alt="">
+          <img class="w-auto h-96" src="images/whychoose1.png" alt="">
         </div>
 
         <!--together reverse row no.3-->
